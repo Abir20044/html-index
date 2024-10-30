@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style css.css">
+    <title>Mon Profil Personnel</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ABIR MEKAOUI</h1>
+        </header>
+        
+        <section>
+            <h2>À propos de moi</h2>
+            <img src="abir photo.jpeg" alt="Photo de Mekaoui Abir" class="profile-image">
+            <p>Je suis Mekaoui Abir, 20 ans, actuellement en troisième année à l'École Marocaine des Sciences de l'Ingénieur, où je me concentre sur le développement de mes compétences en programmation et aspire à me spécialiser en intelligence artificielle pour travailler sur des projets concrets.</p>
+        </section>
+        
+        <section>
+            <h3>Mes hobbies</h3>
+            <ul>
+                <li>La danse</li>
+                <li>Le voyage</li>
+                <li>La Lecture</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h3>Objectifs</h3>
+            <ol>
+                <li>Acquérir plus de compétences en programmation</li>
+                <li>Pouvoir travailler sur des projets concrets</li>
+                <li>Me spécialiser en intelligence artificielle</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Tableau d'Amis</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Âge</th>
+                        <th>Ville</th>
+                        <th>Profil</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Asmaa Naib</td>
+                        <td>21</td>
+                        <td>Casablanca</td>
+                        <td><a href="https://www.instagram.com/_asmaaaaaaaae_?igsh=ZXNnZmFxb3RjM3ox" target="_blank">Voir profil</a></td>
+                    </tr>
+                    <tr>
+                        <td>amine khmissi</td>
+                        <td>22</td>
+                        <td>Casablanca</td>
+                        <td><a href="https://www.instagram.com/itsamine_kh?igsh=MnNvN25zbjhjaXN5" target="_blank">Voir profil</a></td>
+                    </tr>
+                    <tr>
+                        <td>Aya Tijini</td>
+                        <td>20</td>
+                        <td>Casablanca</td>
+                        <td><a href="https://www.instagram.com/warethedevils?igsh=MW5lamVjbjNibjJuZA==" target="_blank">Voir profil</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Contactez-moi</h3>
+            <form id="contactForm">
+                <label for="name">Nom :</label>
+                <input type="text" name="name" id="name" required>
+                
+                <label for="email">Adresse mail :</label>
+                <input type="email" name="email" id="email" required>
+                
+                <label for="message">Message :</label>
+                <textarea name="message" id="message" required></textarea>
+                
+                <input type="submit" value="Soumettre">
+            </form>
+        </section>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').onsubmit = function(event) {
+            event.preventDefault(); // Empêche l'envoi du formulaire
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+
+            if (!name || !validateEmail(email)) {
+                alert("Veuillez remplir tous les champs correctement.");
+            } else {
+                alert("Formulaire soumis avec succès!");
+            }
+        }
+
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+    </script>
+</body>
+</html>

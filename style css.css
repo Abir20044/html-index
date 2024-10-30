@@ -1,0 +1,159 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f4f8; /* Fond léger */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur principal */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Titres */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #e91e63; /* Rose vif */
+    margin-bottom: 10px;
+}
+
+h2, h3 {
+    color: #ad1457; /* Rose foncé */
+    margin-top: 20px;
+    border-bottom: 2px solid #e91e63; /* Ligne sous le titre */
+    padding-bottom: 5px;
+}
+
+/* Image de profil */
+.profile-image {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 4px solid #e91e63; /* Bordure autour de l'image */
+}
+
+/* Styles pour la section des hobbies */
+.hobbies {
+    background-color: #f8bbd0; /* Fond rose pâle */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hobby-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.hobby-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    width: 30%; /* Ajustez selon vos besoins */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.hobby-item:hover {
+    transform: scale(1.05); /* Effet de survol */
+}
+
+.hobby-icon {
+    width: 50px; /* Taille de l'icône */
+    height: 50px;
+}
+
+/* Styles pour la section des objectifs */
+.goals {
+    background-color: #e1bee7; /* Fond violet clair */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.goal-list {
+    list-style-type: none; /* Supprime les puces */
+    padding: 0;
+}
+
+.goal-list li {
+    font-size: 1.1em;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.goal-icon {
+    margin-right: 10px; /* Espace entre l'icône et le texte */
+    font-size: 1.5em; /* Taille de l'icône */
+}
+
+/* Style du tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #e91e63; /* Rose vif */
+    color: white;
+}
+
+table td {
+    background-color: #f8bbd0; /* Rose pâle */
+}
+
+/* Liens */
+a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ad1457;
+}
+
+/* Formulaire */
+form {
+    background-color: #fce4ec; /* Fond léger rose */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background-color: #e91e63;
+   
+}
